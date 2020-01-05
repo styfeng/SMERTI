@@ -2,7 +2,7 @@
 Code for the SMERTI pipeline designed for Semantic Text Exchange, presented in [*Keep Calm and Switch On! Preserving Sentiment and Fluency in Semantic Text Exchange*](https://www.aclweb.org/anthology/D19-1272/) published at EMNLP-IJCNLP 2019.
 
 
-## Following is a brief description of what each file does:
+## Following is a brief description of each file:
 
 1. Dataset_preprocessing_(reviews) and Dataset_preprocessing_(news) are for preprocessing the reviews (e.g. Yelp and Amazon) and news headlines, respectively, generating training and testing splits, and writing them to .txt files. (Data Preprocessing and Preparation)
 2. Dataset_masking_(reviews) and Dataset_masking_(news) are for generating masked versions of the training and testing data from step 1. for reviews and news headlines, respectively, and writing them to .txt files. (Data Preprocessing and Preparation)
@@ -11,3 +11,6 @@ Code for the SMERTI pipeline designed for Semantic Text Exchange, presented in [
 5. Evaluation_setup is to generate the evaluation lines for the datasets and includes choosing nouns, choosing evaluation lines per noun, and writing them to .txt files. (Evaluation)
 6. Final_evaluation is to calculate metrics including SPA, BLEU, Perplexity, and SLOR using SMERTI's output from the evaluation lines, and includes functions to write results to .txt files. (Evaluation)
 7. SLOR_normalization is to normalize all SLOR values (81,000 in our case) calculated from step 6. above to a [0,1] interval. (Evaluation)
+
+
+*Note: updated evaluation code and code for the baselines will be released at a later date.
