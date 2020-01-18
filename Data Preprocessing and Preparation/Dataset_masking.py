@@ -58,14 +58,15 @@ def write_file(lst, path):
     print("Lines successfully written to file!")
 
 
+    
 #For news headlines:
 
-path1 = os.path.expanduser('News_Dataset/transformer_data/train_headlines.txt')
-path2 = os.path.expanduser('News_Dataset/transformer_data/val_headlines.txt')
-path3 = os.path.expanduser('News_Dataset/transformer_data/test_headlines.txt')
-path4 = os.path.expanduser('News_Dataset/transformer_data/masked_train_headlines.txt')
-path5 = os.path.expanduser('News_Dataset/transformer_data/masked_val_headlines.txt')
-path6 = os.path.expanduser('News_Dataset/transformer_data/masked_test_headlines.txt')
+path1 = os.path.expanduser('News_Dataset/train_headlines.txt')
+path2 = os.path.expanduser('News_Dataset/val_headlines.txt')
+path3 = os.path.expanduser('News_Dataset/test_headlines.txt')
+path4 = os.path.expanduser('News_Dataset/masked_train_headlines.txt')
+path5 = os.path.expanduser('News_Dataset/masked_val_headlines.txt')
+path6 = os.path.expanduser('News_Dataset/masked_test_headlines.txt')
 
 total_headlines_train = 120000
 total_headlines_val = 20000
@@ -82,38 +83,38 @@ mask_test_list = mask_all(path3, total_headlines_test)
 
 #For reviews:
 
-path1 = os.path.expanduser('Yelp_Dataset/transformer_data/train_reviews_positive.txt')
-path2 = os.path.expanduser('Yelp_Dataset/transformer_data/train_reviews_negative.txt')
-path3 = os.path.expanduser('Yelp_Dataset/transformer_data/train_reviews_neutral.txt')
+path1 = os.path.expanduser('Yelp_Dataset/train_reviews_positive.txt')
+path2 = os.path.expanduser('Yelp_Dataset/train_reviews_negative.txt')
+path3 = os.path.expanduser('Yelp_Dataset/train_reviews_neutral.txt')
     
-path4 = os.path.expanduser('Yelp_Dataset/transformer_data/valid_reviews_positive.txt')
-path5 = os.path.expanduser('Yelp_Dataset/transformer_data/valid_reviews_negative.txt')
-path6 = os.path.expanduser('Yelp_Dataset/transformer_data/valid_reviews_neutral.txt')
+path4 = os.path.expanduser('Yelp_Dataset/valid_reviews_positive.txt')
+path5 = os.path.expanduser('Yelp_Dataset/valid_reviews_negative.txt')
+path6 = os.path.expanduser('Yelp_Dataset/valid_reviews_neutral.txt')
     
-path7 = os.path.expanduser('Yelp_Dataset/transformer_data/test_reviews_positive.txt')
-path8 = os.path.expanduser('Yelp_Dataset/transformer_data/test_reviews_negative.txt')
-path9 = os.path.expanduser('Yelp_Dataset/transformer_data/test_reviews_neutral.txt')
+path7 = os.path.expanduser('Yelp_Dataset/test_reviews_positive.txt')
+path8 = os.path.expanduser('Yelp_Dataset/test_reviews_negative.txt')
+path9 = os.path.expanduser('Yelp_Dataset/test_reviews_neutral.txt')
 
-path10 = os.path.expanduser('Yelp_Dataset/transformer_data/final_train_reviews.txt')
-path11 = os.path.expanduser('Yelp_Dataset/transformer_data/final_valid_reviews.txt')
-path12 = os.path.expanduser('Yelp_Dataset/transformer_data/final_test_reviews.txt')
+path10 = os.path.expanduser('Yelp_Dataset/final_train_reviews.txt')
+path11 = os.path.expanduser('Yelp_Dataset/final_valid_reviews.txt')
+path12 = os.path.expanduser('Yelp_Dataset/final_test_reviews.txt')
 
 
-path13 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_train_reviews_positive.txt')
-path14 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_train_reviews_negative.txt')
-path15 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_train_reviews_neutral.txt')
+path13 = os.path.expanduser('Yelp_Dataset/mask_train_reviews_positive.txt')
+path14 = os.path.expanduser('Yelp_Dataset/mask_train_reviews_negative.txt')
+path15 = os.path.expanduser('Yelp_Dataset/mask_train_reviews_neutral.txt')
     
-path16 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_valid_reviews_positive.txt')
-path17 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_valid_reviews_negative.txt')
-path18 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_valid_reviews_neutral.txt')
+path16 = os.path.expanduser('Yelp_Dataset/mask_valid_reviews_positive.txt')
+path17 = os.path.expanduser('Yelp_Dataset/mask_valid_reviews_negative.txt')
+path18 = os.path.expanduser('Yelp_Dataset/mask_valid_reviews_neutral.txt')
     
-path19 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_test_reviews_positive.txt')
-path20 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_test_reviews_negative.txt')
-path21 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_test_reviews_neutral.txt')
+path19 = os.path.expanduser('Yelp_Dataset/mask_test_reviews_positive.txt')
+path20 = os.path.expanduser('Yelp_Dataset/mask_test_reviews_negative.txt')
+path21 = os.path.expanduser('Yelp_Dataset/mask_test_reviews_neutral.txt')
 
-path22 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_final_train_reviews.txt')
-path23 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_final_valid_reviews.txt')
-path24 = os.path.expanduser('Yelp_Dataset/transformer_data/mask_final_test_reviews.txt')
+path22 = os.path.expanduser('Yelp_Dataset/mask_final_train_reviews.txt')
+path23 = os.path.expanduser('Yelp_Dataset/mask_final_valid_reviews.txt')
+path24 = os.path.expanduser('Yelp_Dataset/mask_final_test_reviews.txt')
 
 
 train_positive = 30000

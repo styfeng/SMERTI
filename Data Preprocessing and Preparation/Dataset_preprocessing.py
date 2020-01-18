@@ -109,12 +109,13 @@ def write_file(lst, path):
     print("Lines successfully written to file!")
 
 
+    
 #For news headlines:
 
 path1 = os.path.expanduser('News_Dataset/News_Category_Dataset_v2.json')
-path2 = os.path.expanduser('News_Dataset/transformer_data/train_headlines.txt')
-path3 = os.path.expanduser('News_Dataset/transformer_data/val_headlines.txt')
-path4 = os.path.expanduser('News_Dataset/transformer_data/test_headlines.txt')
+path2 = os.path.expanduser('News_Dataset/train_headlines.txt')
+path3 = os.path.expanduser('News_Dataset/val_headlines.txt')
+path4 = os.path.expanduser('News_Dataset/test_headlines.txt')
 
 max_length = 20
 
@@ -137,21 +138,21 @@ test_list = headline_list[140000:160000]
 
 path1 = os.path.expanduser('Yelp_Dataset/review.json')
 
-path2 = os.path.expanduser('Yelp_Dataset/transformer_data/train_reviews_positive.txt')
-path3 = os.path.expanduser('Yelp_Dataset/transformer_data/train_reviews_negative.txt')
-path4 = os.path.expanduser('Yelp_Dataset/transformer_data/train_reviews_neutral.txt')
+path2 = os.path.expanduser('Yelp_Dataset/train_reviews_positive.txt')
+path3 = os.path.expanduser('Yelp_Dataset/train_reviews_negative.txt')
+path4 = os.path.expanduser('Yelp_Dataset/train_reviews_neutral.txt')
 
-path5 = os.path.expanduser('Yelp_Dataset/transformer_data/valid_reviews_positive.txt')
-path6 = os.path.expanduser('Yelp_Dataset/transformer_data/valid_reviews_negative.txt')
-path7 = os.path.expanduser('Yelp_Dataset/transformer_data/valid_reviews_neutral.txt')
+path5 = os.path.expanduser('Yelp_Dataset/valid_reviews_positive.txt')
+path6 = os.path.expanduser('Yelp_Dataset/valid_reviews_negative.txt')
+path7 = os.path.expanduser('Yelp_Dataset/valid_reviews_neutral.txt')
 
-path8 = os.path.expanduser('Yelp_Dataset/transformer_data/test_reviews_positive.txt')
-path9 = os.path.expanduser('Yelp_Dataset/transformer_data/test_reviews_negative.txt')
-path10 = os.path.expanduser('Yelp_Dataset/transformer_data/test_reviews_neutral.txt')
+path8 = os.path.expanduser('Yelp_Dataset/test_reviews_positive.txt')
+path9 = os.path.expanduser('Yelp_Dataset/test_reviews_negative.txt')
+path10 = os.path.expanduser('Yelp_Dataset/test_reviews_neutral.txt')
 
-path11 = os.path.expanduser('Yelp_Dataset/transformer_data/final_train_reviews.txt')
-path12 = os.path.expanduser('Yelp_Dataset/transformer_data/final_valid_reviews.txt')
-path13 = os.path.expanduser('Yelp_Dataset/transformer_data/final_test_reviews.txt')
+path11 = os.path.expanduser('Yelp_Dataset/final_train_reviews.txt')
+path12 = os.path.expanduser('Yelp_Dataset/final_valid_reviews.txt')
+path13 = os.path.expanduser('Yelp_Dataset/final_test_reviews.txt')
 
 
 max_length = 20
