@@ -7,21 +7,23 @@ import math
 import unicodedata
 
 
-def mask_all(path, total):
+def mask_all(path):
     mask_list = []
     f = io.open(path, encoding = 'utf-8')
+    lines = f.readlines()
+    total = len(lines)
     counter = 0
-    print("Currently reading lines from file ...")
-    for l in f:
+    print("Currently masking lines ...")
+    for l in lines:
         if 0 <= counter <= int(round(total / 3)):
             masked_text = mask_text(l, 0.15)
         elif int(round(total / 3)) < counter <= int(round((total * 2) / 3)):
             masked_text = mask_text(l, 0.30)
         else:
             masked_text = mask_text(l, 0.45)
-        #For transformer:
+        ##For transformer:
         mask_list.append(masked_text + '\n')
-        #For RNN:
+        ##For RNN:
         #mask_list.append(masked_text + '\t' + l) 
         counter += 1
     return mask_list
@@ -68,13 +70,9 @@ path4 = os.path.expanduser('News_Dataset/masked_train_headlines.txt')
 path5 = os.path.expanduser('News_Dataset/masked_val_headlines.txt')
 path6 = os.path.expanduser('News_Dataset/masked_test_headlines.txt')
 
-total_headlines_train = 120000
-total_headlines_val = 20000
-total_headlines_test = 20000
-
-mask_train_list = mask_all(path1, total_headlines_train)
-mask_val_list = mask_all(path2, total_headlines_val)
-mask_test_list = mask_all(path3, total_headlines_test)
+mask_train_list = mask_all(path1)
+mask_val_list = mask_all(path2)
+mask_test_list = mask_all(path3)
 
 #write_file(mask_train_list, path4)
 #write_file(mask_val_list, path5)
@@ -117,29 +115,17 @@ path23 = os.path.expanduser('Yelp_Dataset/mask_final_valid_reviews.txt')
 path24 = os.path.expanduser('Yelp_Dataset/mask_final_test_reviews.txt')
 
 
-train_positive = 30000
-train_negative = 30000
-train_neutral = 15000
+mask_train_positive = mask_all(path1)
+mask_train_negative = mask_all(path2)
+mask_train_neutral = mask_all(path3)
 
-valid_positive = 5000
-valid_negative = 5000
-valid_neutral = 2500
+mask_valid_positive = mask_all(path4)
+mask_valid_negative = mask_all(path5)
+mask_valid_neutral = mask_all(path6)
 
-test_positive = 5000
-test_negative = 5000
-test_neutral = 2500
-
-mask_train_positive = mask_all(path1, train_positive)
-mask_train_negative = mask_all(path2, train_negative)
-mask_train_neutral = mask_all(path3, train_neutral)
-
-mask_valid_positive = mask_all(path4, valid_positive)
-mask_valid_negative = mask_all(path5, valid_negative)
-mask_valid_neutral = mask_all(path6, valid_neutral)
-
-mask_test_positive = mask_all(path7, test_positive)
-mask_test_negative = mask_all(path8, test_negative)
-mask_test_neutral = mask_all(path9, test_neutral)
+mask_test_positive = mask_all(path7)
+mask_test_negative = mask_all(path8)
+mask_test_neutral = mask_all(path9)
 
 final_mask_train_reviews = mask_train_positive + mask_train_negative + mask_train_neutral
 final_mask_valid_reviews = mask_valid_positive + mask_valid_negative + mask_valid_neutral
