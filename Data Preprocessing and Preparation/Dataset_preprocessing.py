@@ -36,6 +36,7 @@ def process_text(s):
     return s
 
 
+#For news headlines dataset
 def filter_headlines(path, max_length):
     headline_list = []
     f = io.open(path, encoding = 'utf-8')
@@ -54,6 +55,8 @@ def filter_headlines(path, max_length):
     return headline_list
 
 
+#For reviews (e.g. Yelp and Amazon) datasets
+#Note: dataset should be set to "yelp" or "amazon"
 def filter_reviews(path, max_length, dataset):
     review_list = []
     positive_list = []
