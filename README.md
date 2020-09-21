@@ -1,7 +1,7 @@
 # SMERTI for Semantic Text Exchange
 Code for the SMERTI pipeline designed for Semantic Text Exchange, presented in [*Keep Calm and Switch On! Preserving Sentiment and Fluency in Semantic Text Exchange*](https://www.aclweb.org/anthology/D19-1272/) published at EMNLP-IJCNLP 2019.
 
-Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfeng@gmail.com)
+Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfeng@gmail.com) or by opening an issue here
 
 ## Datasets can be obtained from the following sources:
 1. [*News Headlines*](https://www.kaggle.com/rmisra/news-category-dataset)
