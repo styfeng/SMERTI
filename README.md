@@ -18,5 +18,5 @@ Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfe
 6. Final_evaluation is to calculate metrics including SPA, BLEU, CSS, Perplexity, and SLOR using SMERTI's output from the evaluation lines, and includes functions to write results to .txt files. (Evaluation)
 7. SLOR_normalization is to normalize all SLOR values calculated from step 6. above to a [0,1] interval. (Evaluation)
 
-
+## GenAug SMERTI-Transformer
 "GenAug SMERTI-Transformer" folder contains the SMERTI training and inference code for GenAug, presented in [*GenAug: Data Augmentation for Finetuning Text Generators*](https://arxiv.org/abs/2010.01794) published at EMNLP 2020 DeeLIO Workshop.
