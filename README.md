@@ -15,7 +15,7 @@ Poster and other resources can be found [*here*](https://styfeng.github.io/).
 
 Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfeng@gmail.com) or by opening an issue here.
 
-![diagram](SMERTI_diagram.png)
+<img src="SMERTI_diagram.png" alt="drawing" width="400"/>
 
 ## Datasets can be obtained from the following sources:
 1. [*News Headlines*](https://www.kaggle.com/rmisra/news-category-dataset)
