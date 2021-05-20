@@ -15,7 +15,8 @@ Poster and other resources can be found [*here*](https://styfeng.github.io/).
 
 Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfeng@gmail.com) or by opening an issue here.
 
-<img src="SMERTI_diagram.png" alt="drawing" width="400"/>
+<img src="SMERTI_diagram.png" alt="drawing" width="800"/>
+Diagram of our SMERTI pipeline, with ERM (Entity Replacement Module), SMM (Similarity Masking Module), and TIM (Text Infilling Module). Starting string is on the top left, and ending string on the top right, given replacement entity (RE) of *rainy*.
 
 ## Datasets can be obtained from the following sources:
 1. [*News Headlines*](https://www.kaggle.com/rmisra/news-category-dataset)
