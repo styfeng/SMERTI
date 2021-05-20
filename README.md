@@ -11,6 +11,10 @@ Code for the SMERTI pipeline designed for Semantic Text Exchange, presented in [
     doi = "10.18653/v1/D19-1272", pages = "2701--2711",
 }
 ``` 
+Authors: <a href="https://scholar.google.ca/citations?hl=en&user=zwiszZIAAAAJ">Steven Y. Feng</a>,
+			  <a href="https://www.linkedin.com/in/aaron-li-01215748/?originalSubdomain=ca">Aaron W. Li</a>, 
+			  <a href="https://scholar.google.ca/citations?user=YcBGOtQAAAAJ&hl=en">Jesse Hoey</a>
+              
 Poster and other resources can be found [*here*](https://styfeng.github.io/).
 
 Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfeng@gmail.com) or by opening an issue here.
