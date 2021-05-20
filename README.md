@@ -1,5 +1,16 @@
 # SMERTI for Semantic Text Exchange
-Code for the SMERTI pipeline designed for Semantic Text Exchange, presented in [*Keep Calm and Switch On! Preserving Sentiment and Fluency in Semantic Text Exchange*](https://www.aclweb.org/anthology/D19-1272/) published at EMNLP-IJCNLP 2019. 
+Code for the SMERTI pipeline designed for Semantic Text Exchange, presented in [*Keep Calm and Switch On! Preserving Sentiment and Fluency in Semantic Text Exchange*](https://www.aclweb.org/anthology/D19-1272/) published at EMNLP-IJCNLP 2019. You can cite it as follows:
+```
+@inproceedings{feng-etal-2019-keep,
+    title = "Keep Calm and Switch On! Preserving Sentiment and Fluency in Semantic Text Exchange",
+    author = "Feng, Steven Y. and Li, Aaron W. and Hoey, Jesse",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov, year = "2019", address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1272",
+    doi = "10.18653/v1/D19-1272", pages = "2701--2711",
+}
+``` 
 Poster and other resources can be found [*here*](https://styfeng.github.io/).
 
 Note: inquiries should be directed to [*stevenyfeng@gmail.com*](mailto:stevenyfeng@gmail.com) or by opening an issue here.
